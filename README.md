@@ -6,8 +6,7 @@ Vagrant PHP-server
 
 Что необходимо установить?:
 
-- [Vagrant](http://www.vagrantup.com/ "vagrant") версия ``1.6.3`` потому что версия ``1.6.4`` с багом,
-а именно не прокидываеться приватный ip-адрес виртуальной машины
+- [Vagrant](https://www.vagrantup.com/download-archive/v1.6.3.html "vagrant") версия ``1.6.3``
 - [Virtualbox](https://www.virtualbox.org/ "virtualbox")
 
 Процесс настройки:
