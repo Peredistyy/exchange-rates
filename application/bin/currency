@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . "/../vendor/autoload.php";
+
+use ExchangeRates\AppConsole;
+use ExchangeRates\Command\CurrencyLoad;
+use ExchangeRates\Command\CurrencyRateActualize;
+
+$application = new AppConsole();
+$application->add(new CurrencyLoad);
+$application->add(new CurrencyRateActualize);
+$application->run();

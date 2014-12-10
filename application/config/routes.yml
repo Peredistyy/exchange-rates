@@ -1,0 +1,15 @@
+home:
+  path: /
+  defaults: { _controller: 'ExchangeRates\Controller\AppController::homeAction' }
+
+currency_add:
+  path: /currency/add/{currencyOf}/{currencyIn}
+  defaults: { _controller: 'ExchangeRates\Controller\AppController::addAction' }
+
+currency_remove:
+  path: /currency/remove/{id}
+  defaults: { _controller: 'ExchangeRates\Controller\AppController::removeAction' }
+
+currency_list:
+  path: /currency/list
+  defaults: { _controller: 'ExchangeRates\Controller\AppController::listAction' }

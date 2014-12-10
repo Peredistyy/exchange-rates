@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title>Exchange rates</title>
+
+    <link href="/js/extjs/packages/ext-theme-classic/build/resources/ext-theme-classic-all.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/extjs/ext-all.js"></script>
+    <script type="text/javascript" src="/js/extjs/packages/ext-theme-classic/build/ext-theme-classic.js"></script>
+    <script type="text/javascript" src="/js/extjs/packages/ext-locale/build/ext-locale-ru.js"></script>
+
+    <script type="text/javascript" src="/js/exchange_rates/App.js"></script>
+    <script type="text/javascript">
+        Ext.onReady(function () {
+            Ext.create("ExchangeRates.Window", {{ data|json_encode|raw }}).show();
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

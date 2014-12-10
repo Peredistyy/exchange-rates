@@ -1,0 +1,27 @@
+{
+    "name": "prod",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "override_attributes": {
+        "mysql": {
+            "root_password": "78ny7hr",
+            "database": {
+                "exchange_rates": {
+                    "user": "app_user",
+                    "password": "icn8t4jk"
+                }
+            }
+        },
+        "nginx": {
+            "server_name": "192.168.100.100"
+        }
+    },
+    "run_list": [
+        "recipe[build_essential::install]",
+        "recipe[php::install]",
+        "recipe[mysql::install]",
+        "recipe[nginx::install]",
+        "recipe[project::install]",
+        "recipe[cron::install]"
+    ]
+}

@@ -1,0 +1,4 @@
+driver: pdo_mysql
+user: app_user
+password: icn8t4jk
+dbname: exchange_rates
